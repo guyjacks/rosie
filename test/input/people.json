@@ -1,0 +1,47 @@
+people=
+    person=
+        name=troy
+        hobbies=
+            skiing
+            movies
+            swimming
+
+    # each person can have an optional friends list
+    person=
+        name=guy
+	hobbies=
+            hiking
+            hunting
+            fishing
+        friends=
+            troy
+            cameron
+            nate
+
+first=guy
+last=jacks
+
+person=
+    first=guy
+    last=jacks
+
+person=
+    first=guy
+    last=jacks
+    hobbies=
+        gaming
+        running
+        hiking
+
+gaming
+running
+hiking
+    gaming
+    running
+    hiking
+gaming
+running
+hiking
+    gaming
+    running
+    hiking

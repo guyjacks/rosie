@@ -1,0 +1,1 @@
+Some tests functions take callback_mock as an argument.  This argument is implemented in the conftest.py file.  It makes a callback mock object available to the test so I don't have to import mock and create a mock callback everytime I write a test that needs one.

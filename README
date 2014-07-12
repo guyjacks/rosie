@@ -1,0 +1,18 @@
+Rosie works hard to make finite state machines easy!
+
+
+examples
+--
+classic light switch
+
+parse hello world out of a string
+
+count forwards and backwords
+
+notations
+--
+dot format
+
+on-go-do format
+
+manual format - create state, add transition to state, add state to fsm

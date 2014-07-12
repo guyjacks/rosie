@@ -1,0 +1,46 @@
+tsv import for state machines - import from visualizer
+tsv export for state machines - export into visualizer
+
+transition callbacks
+x toggle passing start state and end state to callbacks (on/off)
+x pass them as *kwargs instead of positional arguments
+- toggle returning the callback and args instead of having the fsm directly call the callback...  This could make for clearer code...
+  - state, callback, args, kwargs = fsm.transition(event)
+  - now the fsm's client can directly call the callback
+
+State().on()
+- allow list of events that can trigger a new state
+- example
+  - events = ['a','b','c']
+  - fsm.answer.on(events).go('wrong')
+  - fsm.answer.on('d').go('correct')
+
+rosie.__str__
+# condensed (default)
+start
+ GOTO zero ON start
+zero
+ GOTO one ON next AND do print(1)
+one
+ GOTO two ON next AND do print(2)
+ GOTO zero ON prev AND do print(0)
+two
+ GOTO three ON next AND do print(3)
+ GOTO one ON prev AND do print(1)
+
+rosie.states()
+- return list of states
+
+rosie.state.__str__()
+one
+ GOTO two ON next AND do print(2)
+ GOTO zero ON prev AND do print(0)
+
+Callback.__str__()
+do callback(arg, arg, arg)
+
+visualizer
+- generate list and visualizer with networkx
+- just pip install networkx
+- fsm.visualize returns list
+- networkx.print(list)

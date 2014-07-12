@@ -1,0 +1,11 @@
+README
+setup.py
+rosie/__init__.py
+rosie/delete.py
+rosie/rosie.py
+rosie.egg-info/PKG-INFO
+rosie.egg-info/SOURCES.txt
+rosie.egg-info/dependency_links.txt
+rosie.egg-info/top_level.txt
+test/__init__.py
+test/conftest.py

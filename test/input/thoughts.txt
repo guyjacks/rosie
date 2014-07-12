@@ -1,0 +1,50 @@
+output = []
+buffer = ""
+line = ""
+
+line += '"' + buffer + '":'
+...
+line += '"' + buffer + '"'
+output.append(line)
+...
+
+return output.join(output)
+
+
+people= #let's call this a handle (key[WS]=[WS]\n indicates a handle).  A handle's indent forms the base indent of the nested value
+    guy=cto
+    terrence=developer
+    troy=marketer
+    arr_val_1
+    arr_val_2
+    arr_val_3
+    new_arr_val_1, new_arr_val_2, new_arr_val_3
+
+{
+    people: 
+    {
+        guy:cto,
+        terrence:developer,
+        troy:marketer
+    },
+    [
+        arr_val_1,
+        arr_val_2,
+        arr_val_3
+    ],
+    [
+        new_arr_val_1,
+        new_arr_val_2,
+        new_arr_val_3
+    ]
+            
+}
+
+# root indent for the nested dictionary is 4 (4 spaces)
+
+
+
+def parse_object(self, input, indent):
+	# indent is the number of spaces required to reach root indent
+	chew through chars
+	return rest of input once exit state is met
